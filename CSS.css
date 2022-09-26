@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+div{
+    font-size: 180px;/*definimos el tamaño au bon pain*/
+    font-family:'Oleo Script Swash Caps';/*llamamos el tipo de letra que queremos*/
+    color: white;  
+}
+h1{
+    font-size: 180px;/*definimos el tamaño au bon pain*/
+    font-family:'Oleo Script Swash Caps';/*llamamos el tipo de letra que queremos*/
+    color: black;
+    text-decoration: underline orange 10px;
+    text-underline-position: under;  
+}
+h2{
+    font-size: 60px;/*definimos el tamaño texto de pagina de inicio*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    color: white; 
+}
+h3{
+    font-size: 60px;/*definimos el tamaño texto de pagina de inicio*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    color:;
+}
+h4{
+    font-size: 60px;/*definimos el tamaño texto de pagina de inicio*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    color: black;
+}
+h5{
+    font-size: 120px;/*definimos el tamaño au bon pain*/
+    font-family:'Oleo Script Swash Caps';/*llamamos el tipo de letra que queremos*/
+    color: black; 
+}
+h6{
+    font-size: 120px;/*definimos el tamaño au bon pain*/
+    font-family:'Oleo Script Swash Caps';/*llamamos el tipo de letra que queremos*/
+    color: orange; 
+}
+p {
+    font-size: 80px;/*definimos el tamaño texto de pagina de inicio*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+button{
+    font-size: 60px;/*definimos el tamaño texto del boton*/
+    font-weight: bold;/*colocamos el texto del boton en negrilla*/
+    padding: 10px 20px;/* definimos las dimenciones de el boton (margen)*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    border-radius: 1000px;/* se utiliza para redondear los lados del boton*/
+    border:6px solid black;/* define el borde del boton*/
+    box-shadow: 2px 2px 1px black;/*define el sombreado del borde del boton*/
+    color:white;/*definimos el color de la letra*/
+    background-color: orange;/*definimos el color del boton*/   
+}
+button:hover{       /*sirve para la animacion de cambio de color cuando el cursor pasa por encima de el boton*/
+    background-color: rgb(163, 116, 27);
+}
+.container{/*--Se utiliza para colocar margenes automaticos*/
+    max-width: 1400px;
+    /*margin: auto;*/
+}
+header{
+    background-color: black;/*cambia el color del encabesado del container*/
+}
+
+header .logo{
+    font-family:'Oleo Script Swash Caps';/*llamamos el tipo de letra que queremos*/
+    margin: 0;
+    color: white;
+    padding: 25px 60px;
+    font-size: 80px;   
+}
+header.container{
+    display: flex;
+    flex-direction: column;/*alinea en una columna*/
+    align-items: center;/*centra horizontalmente*/
+}
+header nav{
+    display: flex;
+    text-align: center;
+    padding-bottom: 26px;
+}
+header a{
+    padding: 15px 150px;/* separa las opciones de la barra superior*/
+    font-family:'Poppins';/*llamamos el tipo de letra que queremos*/
+    text-decoration: none;
+    font-size: 60px;/*definimos el tamaño texto del boton*/
+    color: white;  
+}
+header a:hover{/* cambia el color de las opciones de la barra superior al pasar el mouse*/
+    color:orange;
+}
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+}
+#titulo2{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    height: 90vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('1.jpg');   
+}
+#textoInicial{
+    padding-bottom: 600px ;
+    padding-left: 1200px;
+}
+
+#totalBotones{
+    display: flex;
+    align-content: flex-end;
+    padding-left:4800px;
+}
+#logo {
+    padding-left: 150px;
+    padding-top:90px;
+}
+#texto2{
+    padding-left: 1050px;
+    padding-top:1200;
+}
+#menu{
+    padding-left: 500px ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+}
+
+#acercaDe .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#platos{
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+#platos .container{
+    padding: 100px 0px;
+}
+#platos .cartas{
+    padding: 50px;
+    margin:20px;
+    
+}
+.carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('pizza\ champiñones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('lasaña\ boloñesa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('salmon\ al\ horno.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+    
+}
+
+#entradas{
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+#entradas .container{
+    padding: 100px 0px;
+}
+#entradas .carta1{
+    padding: 50px;
+    margin:20px;
+    
+}
+.carta1:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('entrada1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+}
+.carta1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('entrada2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+
+}
+.carta1:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('entrada3.jpg.crdownload');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+    
+}
+#Bebidas{
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+#Bebidas .container{
+    padding: 100px 0px;
+}
+#Bebidas .cartas3{
+    padding: 50px;
+    margin:20px;
+    
+}
+
+#postres{
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+#postres .container{
+    padding: 100px 0px;
+}
+#postres .carta2{
+    padding: 50px;
+    margin:20px;
+    
+}
+.carta2:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('postre1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+}
+.carta2:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('postre2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+
+}
+.carta2:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0,5)
+        rgba(0,0,0,0,5)
+    );
+    background-image: url('postre3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+    
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color:white;
+    
+}
+#final h5{
+    color: white;
+    font-size: 60;
+}
+@media (min-width: 720px){
+#acercaDe  .texto{
+    padding-left: 4040px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    
+    
+}
+acercaDe .container{
+    display: flex;
+}
+
+#platos .platoss{
+    display: flex;
+    justify-content: center;
+    
+}
+#platos .container{
+    padding-left: 3800px;
+    
+} 
+#platos .carta{
+    padding: 0px 800px;
+}
+#entradas .entradass{
+    display: flex;
+    justify-content: center;
+    
+}
+#entradas .container{
+    padding-left: 3800px;
+    
+} 
+#entradas .carta1{
+    padding: 0px 800px;
+}
+#Bebidas .Bebidass{
+    display: flex;
+    justify-content: center;
+    
+}
+#Bebidas .container{
+    padding-left: 3800px;
+    
+} 
+#Bebidas .carta3{
+    padding: 0px 200px;
+}
+#postres .postress{
+    display: flex;
+    justify-content: center;   
+}
+#postres .container{
+    padding-left: 3800px;
+    
+} 
+#postres .carta2{
+    padding: 0px 800px;
+}
+
+}
